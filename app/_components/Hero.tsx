@@ -1,5 +1,6 @@
 import { Button } from '@/components/ui/button'
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 function Hero() {
@@ -18,7 +19,10 @@ function Hero() {
                     }}>Coding Journey</h2>
                 <h2 className='mt-5 font-game text-3xl'> Beginner friendly and easy to learn coding course and project</h2>
 
-                <Button className='mt-7 p-6 font-game text-3xl' variant={'pixel'}>Start Learning</Button>
+
+                <Link href={"/sign-up"}>
+                    <Button className='mt-7 p-6 font-game text-3xl' variant={'pixel'}>Start Learning</Button>
+                </Link>
             </div>
         </div>
     )
