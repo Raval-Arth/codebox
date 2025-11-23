@@ -1,12 +1,18 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import Header from "./_components/Header";
+import Hero from "./_components/Hero";
 
 export default function Home() {
   return (
-    <div className="font-game">
+    <div className="flex flex-col items-center">
 
-      <p>welcome to codebox</p>
-      <Button className="m-4 font-game">Subscribe</Button>
+      {/* Header / Navbar */}
+      <Header />
+
+      {/* Hero Section */}
+      <Hero />
+
     </div>
   );
 }
